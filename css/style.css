@@ -154,7 +154,7 @@ article {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -162,6 +162,7 @@ h1 {
 p {
     text-align: justify;
     margin-bottom: 10px;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 1280px) {
