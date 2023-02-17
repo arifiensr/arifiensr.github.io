@@ -1,150 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!-- my CSS -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <title>Web Programming UNPAS</title>
-  </head>
-
-  <body>
-
-    <!-- navbar -->
-    <div class="navbar-fixed">
-      <nav class="blue darken-2">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">WPU</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="">About Us</a></li>
-              <li><a href="">Clients</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class="ri-home-7-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="blog"><a href="#">Blog<div class="bx bx-chevron-down" id="article-icon"></div></a></div>
+                <div class="sub-blog">
+                    <ul>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="js.html">Javascript</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="login">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <a href="#">Register</a>
         </div>
-      </nav>
-    </div>
+    </header>
 
-    <!-- sidenav -->
-    <ul class="sidenav" id="mobile-nav">
-      <li><a href="">About Us</a></li>
-      <li><a href="">Clients</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
-
-    <!-- slider -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/slider/1.png">
-          <div class="caption left-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider/2.png">
-          <div class="caption right-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider/3.png">
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- About Us -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <h3 class="center light grey-text text-darken-3">About Us</h3>
-          <div class="col m6 light">
-            <h5>We Are Professionals</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quo accusantium repellat similique ipsa doloribus in aliquam earum eaque, possimus necessitatibus sunt repellendus ullam recusandae voluptas dolore debitis saepe facere.</p>
-          </div>
-          <div class="col m6 light">
-            <p>WEB DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 95%"></div>
-            </div>
-            <p>MOBILE APP DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 85%"></div>
-            </div>
-            <p>GAME DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 90%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Clients -->
-    <div class="parallax-container">
-      <div class="parallax"><img src="img/slider/4.png"></div>
-
-      <div class="container clients">
-        <h3 class="center light white-text">Our Clients</h3>
-        <div class="row">
-          <div class="col m4 s12 center">
-            <img src="img/clients/gojek.png">
-          </div>
-          <div class="col m4 s12 center">
-            <img src="img/clients/tokopedia.png">
-          </div>
-          <div class="col m4 s12 center">
-            <img src="img/clients/traveloka.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      const sideNav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(sideNav);
-
-      const slider = document.querySelectorAll('.slider');
-      M.Slider.init(slider, {
-        indicators: false,
-        height: 500,
-        transition: 600,
-        interval: 3000
-      });
-
-      const parallax = document.querySelectorAll('.parallax');
-      M.Parallax.init(parallax);
-
-    </script>
-  </body>
+    <main>
+        <article class="content">
+            
+            <h1>Web Development</h1>
+            <p>
+                Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+                <br><br>
+                Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
+                <br><br>
+                For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer.[3] Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers. Since the commercialization of the Web with Tim Berners-Lee[4] developing the World Wide Web at CERN, the industry has boomed and has become one of the most used technologies ever.
+            </p>
+        </article>
+    </main>
+</body>
 </html>
-
-
-
-
-
-
-
