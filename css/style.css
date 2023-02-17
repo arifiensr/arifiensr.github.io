@@ -181,17 +181,24 @@ p {
 }
 
 .contact {
+    height: 160px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 .contact a {
     display: flex;
     align-items: center;
-    margin: 15px;
+    margin-left: 15px;
     font-size: 1.1rem;
     text-decoration: none;
     color: var(--bg-color-);
+    transition: all .50s ease;
+}
+
+.contact a:hover {
+    color: var(--main-color);
 }
 
 .contact i {
