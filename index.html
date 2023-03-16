@@ -1,52 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katflix</title>
+
+    <!-- * Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- * Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- * Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- * Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- * Bootstrap Header Start -->
+    <!-- <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid ms-4">
+          <a class="navbar-brand" href="#"><i class="bx bxs-cat me-1"></i>Katflix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link current-page" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Genre </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Movies</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex me-4" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+    <!-- * Bootstrap Header End -->
+
+    <!-- * Header Start -->
     <header>
-        <a href="index.html" class="logo"><i class="ri-home-7-fill"></i><span>dibimbing</span></a>
-        <ul class="navbar">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="blog"><a href="#">Blog<div class="bx bx-chevron-down" id="article-icon"></div></a></div>
-                <div class="sub-blog">
-                    <ul>
-                        <li><a href="html.html">HTML</a></li>
-                        <li><a href="css.html">CSS</a></li>
-                        <li><a href="js.html">Javascript</a></li>
-                        <li><a href="submit.html">Add More Blog</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="contact.html" id="last-nav">Contact</a></li>
+      <nav>
+        <div class="logo"><span class="logo-kat">KAT</span>FLIX <i class="bx bxs-cat me-1"></i></div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">TV Series</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Genre</a></li>
         </ul>
+        <button type="button" class="nav-btn">Watch Now!</button>
+        <div class="toggle-btn">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+      <div class="dropdown_menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">TV Series</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Genre</a></li>
+        <li><button type="button" class="nav-btn">Watch Now!</button></li>
+      </div>
     </header>
+    <!-- * Header End -->
 
-    <main>
-        <article class="content">
-            <h1><i class='bx bx-globe'></i>Web Development</h1>
-            <p>
-                Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
-                <br><br>
-                Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
-                <br><br>
-                For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer.[3] Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers. Since the commercialization of the Web with Tim Berners-Lee[4] developing the World Wide Web at CERN, the industry has boomed and has become one of the most used technologies ever.
-            </p>
-        </article>
-    </main>
+    <!-- * Carousel Start -->
+    <div id="movieCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <div class="c-img c-img-1"></div>
+          <div class="carousel-caption bottom-0 pb-1">
+            <p class="c-title">Plane (2023)</p>
+            <p>Pilot Brodie Torrance saves passengers from a lightning strike by making a risky landing on a war-torn island -- only to find that surviving the landing was just the beginning.</p>
+          </div>
+        </div>
+        <div class="container-fluid carousel-item c-item">
+          <div class="c-img c-img-2"></div>
+          <div class="carousel-caption bottom-0 pb-1">
+            <p class="c-title">Money Heist: Korea - Joint Economic Area (2022)</p>
+            <p>Thieves overtake the mint of a unified Korea, trapping hostages inside; the police must stop the thieves as well as the shadowy mastermind behind the heist.</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <div class="c-img c-img-3"></div>
+          <div class="carousel-caption bottom-0 pb-1">
+            <p class="c-title">Joker (2019)</p>
+            <p>Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- * Carousel End -->
 
-    <footer>
-        <span>&copy; 2023 Muhammad Arifien Syachrizal - Front-End Web Development Bootcamp Batch 12</span>
-    </footer>
-</body>
+    <!-- * Bootstrap Alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <p>
+        <strong>HOLIDAY DISCOUNT!</strong> You can get up to 30% discount for annual subscription. Check the promo <a href="#"><strong>here!</strong></a>
+      </p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- ! Main Content Start -->
+    <div class="main-content">
+      <!-- * Newcoming Start -->
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h3>Newcoming</h3>
+        <h5>More</h5>
+      </div>
+      <!-- * Cards Start -->
+      <div class="upcoming">
+        <!-- 1st Card -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="poster">
+            <img src="https://resizing.flixster.com/gTQTULL31wI1--__CN1GrgKQaNE=/206x305/v2/https://resizing.flixster.com/6R5NafclJ9o7utVZiBRX9S5Z_2g=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzlkMTI1OGQzLTI0ZTMtNDZhZC1hNzllLTNlNzIxZGY1ZDA4Mi5qcGc=" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="title">Creed III (2023)</h2>
+            <h3>Directed by Michael B. Jordan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+            <div class="info">
+              <p>Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in...</p>
+            </div>
+            <div class="cast">
+              <h4>Cast</h4>
+              <ul>
+                <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade z-14 modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Creed III (2023)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex flex-column align-items-center">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/xTaIZo8OJYE" title="CREED III | Final Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sit, quasi eaque molestiae quam, deserunt maiores vero quas eveniet impedit doloribus, esse veritatis facilis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequatur, minus harum neque unde non velit atque officia nam blanditiis amet magni soluta, sed dolor error ratione! Voluptate, nulla tempore. Culpa reprehenderit facilis sequi a, autem hic optio laboriosam totam nostrum aliquam reiciendis nulla deserunt similique tempora dolore temporibus? Doloremque necessitatibus beatae perspiciatis
+                  sint minus dolores excepturi impedit, numquam totam? Asperiores nostrum officia modi quasi magnam non corrupti iste totam quo ipsum, pariatur accusantium ipsam fugit itaque unde id deleniti! Obcaecati mollitia similique rerum maiores vel nesciunt illum neque reprehenderit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam incidunt, repellat inventore facere ullam magnam molestiae accusamus beatae ipsam at distinctio ratione, sed molestias non earum quae. Perferendis, exercitationem praesentium. Et, ullam. Eius earum quisquam veniam nam doloremque eum explicabo
+                  temporibus obcaecati sequi quasi voluptatem inventore tempora ratione, magnam eaque dolorem porro. Quaerat nostrum sunt, nam dolore eius eligendi consequatur. Corporis, suscipit quas placeat ullam ad illum pariatur rerum, aliquid voluptate cumque nam modi vero facilis accusantium, vitae expedita reprehenderit. Earum amet cum quae vitae officiis libero numquam optio quos. Ullam totam eius et labore exercitationem iusto itaque ipsa nesciunt possimus, sunt nobis corrupti voluptas quos distinctio quaerat adipisci error culpa nulla nam delectus iste praesentium tempora recusandae.
+                  Sequi, quis? Quos obcaecati aspernatur eos explicabo, quas animi tempore nostrum maiores, in sapiente id velit enim a quo voluptas sunt, exercitationem optio! Soluta, repellat beatae dignissimos harum accusamus maxime consectetur sed? Dolorem, magnam. Earum odio sit ipsum animi dignissimos et architecto veniam itaque iusto illo quae in nisi a sequi nemo, iure cum placeat deserunt ex eos vitae minus accusantium assumenda. Dolorum architecto, rerum iste ad quisquam tempore quos reprehenderit impedit non, voluptas, in officiis neque consequuntur vero illo ratione dignissimos quo
+                  alias. Et reiciendis ex illum deserunt eius velit laborum. Obcaecati laboriosam nam laborum exercitationem placeat! Qui, sapiente! Sit officiis, recusandae perspiciatis velit dicta eligendi repellendus quo neque accusantium illo esse temporibus fuga reiciendis necessitatibus quisquam rerum cum tempora. Reprehenderit! Inventore nobis maxime ipsum ab nisi consectetur deserunt itaque, officiis tempora quaerat aut sequi magni distinctio. Magnam optio qui placeat, officia, aut assumenda atque eius error, molestiae perferendis praesentium? Voluptatibus. Dolorum, reiciendis.
+                  Cupiditate, animi voluptas velit explicabo rem molestias illo est quisquam eum, nobis architecto accusamus ad maxime. Laborum dolorum magni quis mollitia sunt unde cum quod velit, in quia!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd Card -->
+        <div class="card">
+          <div class="poster">
+            <img src="https://resizing.flixster.com/gTQTULL31wI1--__CN1GrgKQaNE=/206x305/v2/https://resizing.flixster.com/6R5NafclJ9o7utVZiBRX9S5Z_2g=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzlkMTI1OGQzLTI0ZTMtNDZhZC1hNzllLTNlNzIxZGY1ZDA4Mi5qcGc=" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="title">Creed III (2023)</h2>
+            <h3>Directed by Michael B. Jordan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+            <div class="info">
+              <p>Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in...</p>
+            </div>
+            <div class="cast">
+              <h4>Cast</h4>
+              <ul>
+                <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="poster">
+            <img src="https://resizing.flixster.com/gTQTULL31wI1--__CN1GrgKQaNE=/206x305/v2/https://resizing.flixster.com/6R5NafclJ9o7utVZiBRX9S5Z_2g=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzlkMTI1OGQzLTI0ZTMtNDZhZC1hNzllLTNlNzIxZGY1ZDA4Mi5qcGc=" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="title">Creed III (2023)</h2>
+            <h3>Directed by Michael B. Jordan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+            <div class="info">
+              <p>Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in...</p>
+            </div>
+            <div class="cast">
+              <h4>Cast</h4>
+              <ul>
+                <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="poster">
+            <img src="https://resizing.flixster.com/gTQTULL31wI1--__CN1GrgKQaNE=/206x305/v2/https://resizing.flixster.com/6R5NafclJ9o7utVZiBRX9S5Z_2g=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzlkMTI1OGQzLTI0ZTMtNDZhZC1hNzllLTNlNzIxZGY1ZDA4Mi5qcGc=" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="title">Creed III (2023)</h2>
+            <h3>Directed by Michael B. Jordan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+            <div class="info">
+              <p>Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in...</p>
+            </div>
+            <div class="cast">
+              <h4>Cast</h4>
+              <ul>
+                <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="poster">
+            <img src="https://resizing.flixster.com/gTQTULL31wI1--__CN1GrgKQaNE=/206x305/v2/https://resizing.flixster.com/6R5NafclJ9o7utVZiBRX9S5Z_2g=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzlkMTI1OGQzLTI0ZTMtNDZhZC1hNzllLTNlNzIxZGY1ZDA4Mi5qcGc=" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="title">Creed III (2023)</h2>
+            <h3>Directed by Michael B. Jordan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+            <div class="info">
+              <p>Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in...</p>
+            </div>
+            <div class="cast">
+              <h4>Cast</h4>
+              <ul>
+                <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
+                <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * Cards End -->
+      <!-- * Newcoming End -->
+
+      <div class="container-fluid">
+        <h3>Series</h3>
+      </div>
+    </div>
+
+    <!-- ! Main Content End -->
+
+    <!-- * Footer Start -->
+    <!-- <footer class="bg-light text-dark pt-5 pb-4 px-3 mt-3 d-flex justify-content-evenly gap-5">
+      <div class="container fcol1 h-100">
+        <h4>Company Name</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
+      </div>
+      <div class="container fcol1 h-100">
+        <h4>Products</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
+      </div>
+      <div class="container fcol1 h-100">
+        <h4>Company Name</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
+      </div>
+      <div class="container fcol1 h-100">
+        <h4>Contact</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
+      </div>
+    </footer> -->
+    <!-- * Footer End -->
+
+    <!-- * Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- * Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/1f0e30cd36.js" crossorigin="anonymous"></script>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn')
+      const toggleBtnIcon = document.querySelector('.toggle-btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen ? 'bx bx-x' : 'bx bx-menu'
+      }
+    </script>
+  </body>
 </html>
