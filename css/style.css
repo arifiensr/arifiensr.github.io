@@ -320,7 +320,7 @@ nav .toggle-btn {
   margin-top: 10px;
 }
 
-.card .details .cast h4 {
+.card .details .cast h5 {
   color: #fff;
   margin-bottom: 10px;
 }
@@ -328,8 +328,10 @@ nav .toggle-btn {
 .card .details .cast ul {
   position: relative;
   display: flex;
+  justify-content: start;
   gap: 10px;
   margin-top: 10px;
+  padding-left: 0;
 }
 
 .card .details .cast ul li {
@@ -351,7 +353,7 @@ nav .toggle-btn {
 
 .imdb {
   padding: 5px;
-  background-color: #D1A81F;
+  background-color: #d1a81f;
   border-radius: 5px;
   color: black;
   font-size: 12px;
@@ -369,11 +371,202 @@ nav .toggle-btn {
 /* * Modal Start */
 
 .modal-content {
-  background-color: var(--color-black-);
+  background-color: var(--color-grey-);
+}
+
+.modal-header {
+  height: 400px;
+  background-size: cover;
+  border: 0;
 }
 
 .modal-header-img-1 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://dx35vtwkllhj9.cloudfront.net/lionsgateus/plane/images/bg1.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+}
+
+.modal-header-img-2 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://nofilmschool.com/sites/default/files/styles/facebook/public/the_whale_2.jpg?itok=s3kSDsu6');
+}
+
+.modal-header-img-3 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+}
+
+.modal-header-img-4 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+}
+
+.modal-header-img-5 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+}
+
+.modal-body {
+  margin: 20px;
+  margin-top: 0;
+  gap: 20px;
+}
+
+.modal-poster {
+  padding: 0;
+  border-radius: 20px;
+  width: 256px;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.modal-poster img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-desc {
+  width: 800px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.modal-desc .title {
+  color: #fff;
+  max-width: 180px;
+  font-size: 20px;
+}
+
+.modal-desc h3 {
+  font-size: 14px;
+  color: #fff;
+}
+
+.modal-desc .rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.modal-desc .rating .fa-star {
+  color: #f7f406;
+  font-size: 1em;
+}
+
+.modal-desc .rating span {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.modal-desc .tags {
+  position: relative;
+  margin-top: 5px;
+}
+
+.modal-desc .tags span {
+  padding: 5px;
+  color: var(--color-black-);
+  background: var(--color-cream-);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modal-desc .tags span:nth-child(2) {
+  color: var(--color-cream-);
+  background: var(--color-black-);
+}
+
+.modal-desc .info {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.modal-desc .cast {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.modal-desc .cast h5 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.modal-desc .cast ul {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.modal-desc .cast ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.modal-desc .cast ul li img {
+  max-width: 100%;
+}
+
+.modal-desc .cast-trailer {
+  flex-grow: 1;
+  width: 100%;
+  justify-self: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.modal-desc .cast-trailer .cast {
+  align-self: start;
+}
+.modal-button {
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.modal-button:hover {
+  scale: 1.05;
+}
+
+.modal-button:active {
+  scale: 0.95;
+}
+
+.modal-button-1 {
+  background-color: var(--color-black-);
+  color: var(--color-cream-);
+  margin-right: 8px;
+}
+
+.modal-button-2 {
+  background-color: var(--color-cream-);
+  color: var(--color-black-);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* * Modal End */
