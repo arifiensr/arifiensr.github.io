@@ -191,7 +191,7 @@ nav .toggle-btn {
 }
 
 /* * Cards Start */
-.upcoming {
+.large-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -267,6 +267,7 @@ nav .toggle-btn {
 .card .details .title {
   color: #fff;
   max-width: 180px;
+  font-size: 20px;
 }
 
 .card .details h3 {
@@ -296,18 +297,22 @@ nav .toggle-btn {
 
 .card .details .tags span {
   padding: 5px;
-  color: #fff;
-  background: #03a8f5;
+  color: var(--color-black-);
+  background: var(--color-cream-);
   border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .card .details .tags span:nth-child(2) {
-  background: #ff5722;
+  color: var(--color-cream-);
+  background: var(--color-black-);
 }
 
 .card .details .info {
   color: #fff;
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .card .details .cast {
@@ -340,12 +345,35 @@ nav .toggle-btn {
   max-width: 100%;
 }
 
+.small-cards {
+  margin-top: 20px;
+}
+
+.imdb {
+  padding: 5px;
+  background-color: #D1A81F;
+  border-radius: 5px;
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imdb-p {
+  padding-left: 7px;
+  font-size: 19px;
+}
+
 /* * Cards End */
 
 /* * Modal Start */
 
 .modal-content {
   background-color: var(--color-black-);
+}
+
+.modal-header-img-1 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://dx35vtwkllhj9.cloudfront.net/lionsgateus/plane/images/bg1.jpg');
 }
 
 /* * Modal End */
