@@ -27,7 +27,7 @@ body {
 
 /* * Header Start */
 
-nav {
+.header-nav {
   position: fixed;
   top: 0;
   z-index: 10;
@@ -98,7 +98,7 @@ li a:hover {
   scale: 0.95;
 }
 
-nav .toggle-btn {
+.header-nav .toggle-btn {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -191,7 +191,7 @@ nav .toggle-btn {
 }
 
 /* * Cards Start */
-.large-cards {
+.cards-lg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -266,7 +266,7 @@ nav .toggle-btn {
 
 .card .details .title {
   color: #fff;
-  max-width: 180px;
+  /* max-width: 180px; */
   font-size: 20px;
 }
 
@@ -389,15 +389,15 @@ nav .toggle-btn {
 }
 
 .modal-header-img-3 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://awsimages.detik.net.id/community/media/visual/2022/11/03/avatar-the-way-of-water-1_169.jpeg?w=1200');
 }
 
 .modal-header-img-4 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2022/12/19/multimedia/puss1/puss1-1-30b7-videoSixteenByNineJumbo1600.jpg');
 }
 
 .modal-header-img-5 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://static01.nyt.com/images/2023/02/16/multimedia/16emily-review-bmqz/16emily-review-bmqz-videoSixteenByNine3000.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://i.ytimg.com/vi/Zi88i4CpHe4/maxresdefault.jpg');
 }
 
 .modal-body {
@@ -431,7 +431,6 @@ nav .toggle-btn {
 
 .modal-desc .title {
   color: #fff;
-  max-width: 180px;
   font-size: 20px;
 }
 
@@ -574,7 +573,7 @@ nav .toggle-btn {
 /* *Contact Form Start */
 
 .contact {
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -728,7 +727,42 @@ nav .toggle-btn {
   color: var(--color-black-);
 }
 
-/* *Contact Form End */
+/* * Contact Form End */
+
+/* * Footer */
+.footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h6 {
+  margin: 0;
+}
+
+.footer h6 .linkedin {
+  color: var(--color-cream-);
+  font-weight: 600;
+}
+
+/* * Bootstrap Breadcrumb */
+
+.bs-breadcrumb {
+  margin-top: 75px;
+  margin-left: 30px;
+}
+
+body > nav > ol > li.breadcrumb-item.active {
+  color: var(--color-cream-);
+  font-weight: 600;
+}
+
+.breadcrumb {
+  --bs-breadcrumb-divider-color: var(--color-cream-);
+}
+
 
 /* * Responsive Design */
 

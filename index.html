@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
 
-    <!-- * Bootstrap -->
+    <!-- * Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
     <!-- * Boxicons -->
@@ -21,57 +21,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- * Bootstrap Header Start -->
-    <!-- <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid ms-4">
-          <a class="navbar-brand" href="#"><i class="bx bxs-cat me-1"></i>Katflix</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link current-page" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Genre </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Movies</a></li>
-                  <li><a class="dropdown-item" href="#">Series</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Drama</a></li>
-                  <li><a class="dropdown-item" href="#">Sci-fi</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex me-4" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header> -->
-    <!-- * Bootstrap Header End -->
-
     <!-- * Header Start -->
     <header>
-      <nav>
+      <nav class="header-nav">
         <div class="logo"><span class="logo-kat">KAT</span>FLIX <i class="bx bxs-cat me-1"></i></div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#">TV Series</a></li>
           <li><a href="#">Movies</a></li>
           <li><a href="#">Genre</a></li>
-          <li><a href="contact.html" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <button type="button" class="nav-btn">Watch Now!</button>
         <div class="toggle-btn">
@@ -90,7 +49,7 @@
     <!-- * Header End -->
 
     <!-- * Carousel Start -->
-    <div id="movieCarousel" class="carousel slide">
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active c-item">
           <div class="c-img c-img-1"></div>
@@ -128,22 +87,22 @@
     <!-- * Bootstrap Alert -->
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <p>
-        <strong>HOLIDAY DISCOUNT!</strong> You can get up to 30% discount for annual subscription. Check the promo <a href="#"><strong>here!</strong></a>
+        <strong>HOLIDAY DISCOUNT!</strong> You can get up to <strong>30% discount</strong> for an annual subscription. Check the promo <a href="#"><strong>here!</strong></a>
       </p>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
-    <!-- ! Main Content Start -->
+    <!-- * Main Content Start -->
     <div class="main-content mb-4">
-      <!-- * Newcoming Start -->
+      <!-- * Large Card Start -->
       <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
         <h5><a href="#">New Releases</a></h5>
         <h5><a href="#">More</a></h5>
       </div>
       <!-- * Cards Start -->
-      <div class="large-cards">
+      <div class="cards-lg">
         <!-- * 1st Large Card -->
-        <div class="card-1">
+        <div class="card-lg-1">
           <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#firstCardModal">
             <div class="poster">
               <img src="https://resizing.flixster.com/SKYj-nTZxPCuA0S2CYE-SrlHhhw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2Y5MjdmYjM4LWM0MjItNDI1OC04ODY0LTU1NDc4NmRlMzdhNi5qcGc=" alt="" />
@@ -229,7 +188,7 @@
         </div>
 
         <!-- * 2nd Large Card -->
-        <div class="card-1">
+        <div class="card-lg-2">
           <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#secondCardModal">
             <div class="poster">
               <img src="https://resizing.flixster.com/k4O2dPmx9brEPScWUiuFiayMHpo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2M3ODEzY2Q4LTc4YWEtNDQ0OC1hNGQ0LTU0NGQzZWJjMzNhMy5qcGc=" alt="" />
@@ -315,37 +274,37 @@
         </div>
 
         <!-- * 3rd Large Card -->
-        <div class="card-1">
+        <div class="card-lg-3">
           <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
             <div class="poster">
               <img src="https://resizing.flixster.com/gWWM2Ov0VLAuazwELZCVc9grUQI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyMGM0ZDJiLWNmYjAtNGI3NS1hYTgzLTQ5YmU2ZjQwZWE0ZC5qcGc=" alt="" />
             </div>
             <div class="details">
-              <h2 class="title">Emily (2023)</h2>
-              <h3>Directed by Frances O'Connor</h3>
+              <h2 class="title">Avatar:<br />The Way Of Water (2022)</h2>
+              <h3>Directed by James Cameron</h3>
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <span>4.3/5</span>
+                <i class="fa-regular fa-star"></i>
+                <span>3.8/5</span>
               </div>
               <div class="tags">
-                <span>Biography</span>
-                <span>History</span>
+                <span>Sci-Fi</span>
+                <span>Adventure</span>
               </div>
               <div class="info">
-                <p>EMILY imagines Emily Brontë's own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother...</p>
+                <p>Set more than a decade after the events of the first film, "Avatar: The Way of Water" begins to tell the story of the Sully family (Jake, Neytiri, and their kids), the trouble...</p>
               </div>
               <div class="cast">
                 <h5>Cast</h5>
                 <ul>
-                  <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/OMwb6yZXKNAdV1chaDVbjpX23gY=/100x120/v2/https://flxt.tmsimg.com/assets/218027_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/9dzDy_YPVGFeEmXI1AM5zC3dgig=/100x120/v2/https://flxt.tmsimg.com/assets/194024_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/2T-jtfm6BgiDv7C9Bn1CLDHoPeE=/100x120/v2/https://flxt.tmsimg.com/assets/1898_v9_bc.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/o_0cQ3_e4ZkG5HBGf_GFhh-v5aA=/100x120/v2/https://flxt.tmsimg.com/assets/73978_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/kUxTVLOtJDkjSpEmiSLyRR2Xylk=/100x120/v2/https://flxt.tmsimg.com/assets/151910_v9_bc.jpg" alt="" /></li>
                 </ul>
               </div>
             </div>
@@ -354,42 +313,42 @@
           <div class="modal fade z-14 modal-xl" id="thirdCardModal" tabindex="-1" aria-labelledby="thirdCardModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header modal-header-img-1"></div>
+                <div class="modal-header modal-header-img-3"></div>
                 <div class="modal-body d-flex align-items-start">
                   <div class="modal-poster">
                     <img src="https://resizing.flixster.com/gWWM2Ov0VLAuazwELZCVc9grUQI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyMGM0ZDJiLWNmYjAtNGI3NS1hYTgzLTQ5YmU2ZjQwZWE0ZC5qcGc=" alt="" />
                   </div>
                   <div class="modal-desc">
-                    <h2 class="title">Emily (2023)</h2>
-                    <h3>Directed by Frances O'Connor</h3>
+                    <h2 class="title">Avatar: The Way Of Water (2022)</h2>
+                    <h3>Directed by James Cameron</h3>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
-                      <span>4.3/5</span>
+                      <span>3.8/5</span>
                     </div>
                     <div class="tags">
-                      <span>Biography</span>
-                      <span>History</span>
+                      <span>Sci-Fi</span>
+                      <span>Adventure</span>
                     </div>
                     <div class="info">
-                      <p>EMILY imagines Emily Brontë’s own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother, Emily struggles within the confines of her family life and yearns for artistic and personal freedom, and so begins a journey to channel her creative potential into one of the greatest novels of all time.</p>
+                      <p>Set more than a decade after the events of the first film, "Avatar: The Way of Water" begins to tell the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.</p>
                     </div>
                     <div class="cast-trailer">
                       <div class="cast">
                         <h5>Cast</h5>
                         <ul>
-                          <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/OMwb6yZXKNAdV1chaDVbjpX23gY=/100x120/v2/https://flxt.tmsimg.com/assets/218027_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/9dzDy_YPVGFeEmXI1AM5zC3dgig=/100x120/v2/https://flxt.tmsimg.com/assets/194024_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/2T-jtfm6BgiDv7C9Bn1CLDHoPeE=/100x120/v2/https://flxt.tmsimg.com/assets/1898_v9_bc.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/o_0cQ3_e4ZkG5HBGf_GFhh-v5aA=/100x120/v2/https://flxt.tmsimg.com/assets/73978_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/kUxTVLOtJDkjSpEmiSLyRR2Xylk=/100x120/v2/https://flxt.tmsimg.com/assets/151910_v9_bc.jpg" alt="" /></li>
                         </ul>
                       </div>
                       <div>
-                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=xaL90sMAzbY')">Watch Trailer</button>
+                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=d9MyW72ELq0')">Watch Trailer</button>
                         <button type="button" class="modal-button modal-button-2">Watch Now!</button>
                       </div>
                     </div>
@@ -401,37 +360,37 @@
         </div>
 
         <!-- * 4th Large Card -->
-        <div class="card-1">
+        <div class="card-lg-4">
           <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
             <div class="poster">
               <img src="https://resizing.flixster.com/vtIcjOYiM-QBXQyXhTFFgQoRkDw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JmNjM3ZTc2LTk5ZmMtNGJhNy04MDAzLWI3M2IxNmExNDNkYi5qcGc=" alt="" />
             </div>
             <div class="details">
-              <h2 class="title">Emily (2023)</h2>
-              <h3>Directed by Frances O'Connor</h3>
+              <h2 class="title">Puss In Boots:<br />The Last Wish (2022)</h2>
+              <h3>Directed by Joel Crawford</h3>
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <span>4.3/5</span>
+                <span>4.8/5</span>
               </div>
               <div class="tags">
-                <span>Biography</span>
-                <span>History</span>
+                <span>Comedy</span>
+                <span>Adventure</span>
               </div>
               <div class="info">
-                <p>EMILY imagines Emily Brontë's own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother...</p>
+                <p>This fall, everyone's favorite leche-loving, swashbuckling, fear-defying feline returns. For the first time in more than a decade, DreamWorks Animation presents a new adventure in...</p>
               </div>
               <div class="cast">
                 <h5>Cast</h5>
                 <ul>
-                  <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/juGCmzZ4gxhPo6MCBVpwARzmsk8=/100x120/v2/https://flxt.tmsimg.com/assets/5885_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/U0O4AjPm_a1XucMoJkQyXNh7eyQ=/100x120/v2/https://flxt.tmsimg.com/assets/71233_v9_bc.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/nKi20bZlVRDUsjdocU08f9b-_N8=/100x120/v2/https://flxt.tmsimg.com/assets/449885_v9_bd.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/4qWXe1ZYNZf-GKya28gdN8Vlcm8=/100x120/v2/https://flxt.tmsimg.com/assets/516817_v9_bd.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/HC8D04MpHlw1y9ePv4oWiHXsRpU=/100x120/v2/https://flxt.tmsimg.com/assets/1053891_v9_ba.jpg" alt="" /></li>
                 </ul>
               </div>
             </div>
@@ -440,42 +399,42 @@
           <div class="modal fade z-14 modal-xl" id="fourthCardModal" tabindex="-1" aria-labelledby="fourthCardModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header modal-header-img-1"></div>
+                <div class="modal-header modal-header-img-4"></div>
                 <div class="modal-body d-flex align-items-start">
                   <div class="modal-poster">
                     <img src="https://resizing.flixster.com/vtIcjOYiM-QBXQyXhTFFgQoRkDw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JmNjM3ZTc2LTk5ZmMtNGJhNy04MDAzLWI3M2IxNmExNDNkYi5qcGc=" alt="" />
                   </div>
                   <div class="modal-desc">
-                    <h2 class="title">Emily (2023)</h2>
-                    <h3>Directed by Frances O'Connor</h3>
+                    <h2 class="title">Puss In Boots: The Last Wish (2022)</h2>
+                    <h3>Directed by Joel Crawford</h3>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
-                      <span>4.3/5</span>
+                      <span>4.8/5</span>
                     </div>
                     <div class="tags">
-                      <span>Biography</span>
-                      <span>History</span>
+                      <span>Comedy</span>
+                      <span>Adventure</span>
                     </div>
                     <div class="info">
-                      <p>EMILY imagines Emily Brontë’s own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother, Emily struggles within the confines of her family life and yearns for artistic and personal freedom, and so begins a journey to channel her creative potential into one of the greatest novels of all time.</p>
+                      <p>Academy Award® nominee Antonio Banderas returns as the voice of the notorious PiB as he embarks on an epic journey into the Black Forest to find the mythical Wishing Star and restore his lost lives. But with only one life left, Puss will have to humble himself and ask for help from his former partner and nemesis: the captivating Kitty Soft Paws (Oscar® nominee Salma Hayek). In their quest, Puss and Kitty will be aided--against their better judgment--by a ratty, chatty, relentlessly cheerful mutt, Perro (Harvey Guillén, What We Do in the Shadows).</p>
                     </div>
                     <div class="cast-trailer">
                       <div class="cast">
                         <h5>Cast</h5>
                         <ul>
-                          <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/juGCmzZ4gxhPo6MCBVpwARzmsk8=/100x120/v2/https://flxt.tmsimg.com/assets/5885_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/U0O4AjPm_a1XucMoJkQyXNh7eyQ=/100x120/v2/https://flxt.tmsimg.com/assets/71233_v9_bc.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/nKi20bZlVRDUsjdocU08f9b-_N8=/100x120/v2/https://flxt.tmsimg.com/assets/449885_v9_bd.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/4qWXe1ZYNZf-GKya28gdN8Vlcm8=/100x120/v2/https://flxt.tmsimg.com/assets/516817_v9_bd.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/HC8D04MpHlw1y9ePv4oWiHXsRpU=/100x120/v2/https://flxt.tmsimg.com/assets/1053891_v9_ba.jpg" alt="" /></li>
                         </ul>
                       </div>
                       <div>
-                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=xaL90sMAzbY')">Watch Trailer</button>
+                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=RqrXhwS33yc')">Watch Trailer</button>
                         <button type="button" class="modal-button modal-button-2">Watch Now!</button>
                       </div>
                     </div>
@@ -487,37 +446,37 @@
         </div>
 
         <!-- * 5th Large Card -->
-        <div class="card-1">
+        <div class="card-lg-5">
           <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
             <div class="poster">
-              <img src="https://resizing.flixster.com/uAim3rcBWN6qbjlgZ5GUQiDkhYQ=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2MyNWU2YWY2LTM0YWYtNGE0Yi05ZGIxLTFhNDNiYjkwNGY5OS5qcGc=" alt="" />
+              <img src="https://assets-prd.ignimgs.com/2023/01/24/shzam2-vert-main-2764x4096-dom-1674589983500.jpg" alt="" />
             </div>
             <div class="details">
-              <h2 class="title">Emily (2023)</h2>
-              <h3>Directed by Frances O'Connor</h3>
+              <h2 class="title">SHAZAM!<br />Fury Of The Gods (2023)</h2>
+              <h3>Directed by David F. Sandberg</h3>
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <span>4.3/5</span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>2.7/5</span>
               </div>
               <div class="tags">
-                <span>Biography</span>
-                <span>History</span>
+                <span>Action</span>
+                <span>Adventure</span>
               </div>
               <div class="info">
-                <p>EMILY imagines Emily Brontë's own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother...</p>
+                <p>From New Line Cinema comes "Shazam! Fury of the Gods," which continues the story of teenage Billy Batson who, upon reciting the magic word "SHAZAM!," is transformed into...</p>
               </div>
               <div class="cast">
                 <h5>Cast</h5>
                 <ul>
-                  <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                  <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/9wUV9Ujaga3hCwqVwL3M53l51C0=/100x120/v2/https://flxt.tmsimg.com/assets/272823_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/eQz-piPYeekQeFvguYgbW8IS5UA=/100x120/v2/https://flxt.tmsimg.com/assets/74573_v9_bc.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/SHhdGjdiYEUspWylTwZSZbBlArM=/100x120/v2/https://flxt.tmsimg.com/assets/151593_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/nvIjZslc_gFPwhJzaQ0DFyY7hN4=/100x120/v2/https://flxt.tmsimg.com/assets/797733_v9_bb.jpg" alt="" /></li>
+                  <li><img src="https://resizing.flixster.com/lPpfbp-HU732tn1KG13SQxNGt14=/100x120/v2/https://flxt.tmsimg.com/assets/1306025_v9_aa.jpg" alt="" /></li>
                 </ul>
               </div>
             </div>
@@ -526,42 +485,42 @@
           <div class="modal fade z-14 modal-xl" id="fifthCardModal" tabindex="-1" aria-labelledby="fifthCardModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header modal-header-img-1"></div>
+                <div class="modal-header modal-header-img-5"></div>
                 <div class="modal-body d-flex align-items-start">
                   <div class="modal-poster">
-                    <img src="https://resizing.flixster.com/uAim3rcBWN6qbjlgZ5GUQiDkhYQ=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2MyNWU2YWY2LTM0YWYtNGE0Yi05ZGIxLTFhNDNiYjkwNGY5OS5qcGc=" alt="" />
+                    <img src="https://assets-prd.ignimgs.com/2023/01/24/shzam2-vert-main-2764x4096-dom-1674589983500.jpg" alt="" />
                   </div>
                   <div class="modal-desc">
-                    <h2 class="title">Emily (2023)</h2>
-                    <h3>Directed by Frances O'Connor</h3>
+                    <h2 class="title">SHAZAM! Fury Of The Gods (2023)</h2>
+                    <h3>Directed by David F. Sandberg</h3>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
-                      <span>4.3/5</span>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <span>2.7/5</span>
                     </div>
                     <div class="tags">
-                      <span>Biography</span>
-                      <span>History</span>
+                      <span>Action</span>
+                      <span>Adventure</span>
                     </div>
                     <div class="info">
-                      <p>EMILY imagines Emily Brontë’s own Gothic story that inspired her seminal novel, "Wuthering Heights." Haunted by the death of her mother, Emily struggles within the confines of her family life and yearns for artistic and personal freedom, and so begins a journey to channel her creative potential into one of the greatest novels of all time.</p>
+                      <p>From New Line Cinema comes "Shazam! Fury of the Gods," which continues the story of teenage Billy Batson who, upon reciting the magic word "SHAZAM!," is transformed into his adult Super Hero alter ego, Shazam.</p>
                     </div>
                     <div class="cast-trailer">
                       <div class="cast">
                         <h5>Cast</h5>
                         <ul>
-                          <li><img src="https://resizing.flixster.com/X5l-8_ynQKM-4H5wC22ozAjMf_o=/100x120/v2/https://flxt.tmsimg.com/assets/382200_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/JJeiQ9nJ-Ygh_yr3EcverhEs0E0=/100x120/v2/https://flxt.tmsimg.com/assets/318030_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/FOCuhU7FeAWspWTCtoZkyrKFgSs=/100x120/v2/https://flxt.tmsimg.com/assets/613533_v9_bb.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/1oTd4jl650bQwpSB0S_Bqj0jivg=/100x120/v2/https://flxt.tmsimg.com/assets/182287_v9_bc.jpg" alt="" /></li>
-                          <li><img src="https://resizing.flixster.com/SCX8cQHdEDS009_zOeK4x9eF7TI=/100x120/v2/https://flxt.tmsimg.com/assets/1788737_v9_aa.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/9wUV9Ujaga3hCwqVwL3M53l51C0=/100x120/v2/https://flxt.tmsimg.com/assets/272823_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/eQz-piPYeekQeFvguYgbW8IS5UA=/100x120/v2/https://flxt.tmsimg.com/assets/74573_v9_bc.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/SHhdGjdiYEUspWylTwZSZbBlArM=/100x120/v2/https://flxt.tmsimg.com/assets/151593_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/nvIjZslc_gFPwhJzaQ0DFyY7hN4=/100x120/v2/https://flxt.tmsimg.com/assets/797733_v9_bb.jpg" alt="" /></li>
+                          <li><img src="https://resizing.flixster.com/lPpfbp-HU732tn1KG13SQxNGt14=/100x120/v2/https://flxt.tmsimg.com/assets/1306025_v9_aa.jpg" alt="" /></li>
                         </ul>
                       </div>
                       <div>
-                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=xaL90sMAzbY')">Watch Trailer</button>
+                        <button type="button" class="modal-button modal-button-1" onclick="window.open('https://www.youtube.com/watch?v=AIc671o9yCI')">Watch Trailer</button>
                         <button type="button" class="modal-button modal-button-2">Watch Now!</button>
                       </div>
                     </div>
@@ -573,212 +532,182 @@
         </div>
       </div>
       <!-- * Cards End -->
-      <!-- * Newcoming End -->
+      <!-- * Large Card End -->
 
-      <div class="small-cards">
-        <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
-          <h5><a href="#">Trending Now</a></h5>
-          <h5><a href="#">More</a></h5>
-        </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZEv8z9IWm7DDzS-9C0AcARf1QvuUo6xW407C4bPfSOkK9M4MzE3g09yU8g7LF9v9dMop8Gfzm03gyHDsDlq56QSi_VLDk8GYD8.webp?r=c7f" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcTFLmYIYxiGAO6goaNz6mPcO05qHtyT-HwjqHrHFcEPsi-czr1cemQZ9dJh7mjpaAZ6WV-LYa6b16afwkP-wTPiwBmeZVYu4UU.webp?r=ae9" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUAZq9Kdrj3EGdYdRNGwgbEV10LICwq7XfygjCxuImLcCFEbevu9yZpGuWuHSKuvMiIXocBBt6eWxXcbwFwQ6qZKVpOrHCBd4dY.webp?r=6aa" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeV7gT0SSdQ2vkO9Rau_9GGDApKyg3SH1pPE-sJ_IrB27oGndkGZzkEysE4JCn9Gcr8HtJ26on-4GPbjFqBf4T4AWXEduCqsj5M.webp?r=c5f" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdnZR0fG5gM6Nw9bwFJZOThF_vA4dPwuz_0qHzc23VHOJUGBvseEIxPjT-kqu9J77SQGsSYJSlTf6q41UyJ-I66RzBkwszhhKS4.webp?r=985" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRMWH1IHpwtXgxo-GD1jz9UChZdD5aXVdqGEvtGxdAoT9vn5aYqdEWeGVNOWUX84K3I3MsTOcWXD8hGnU_riSAFa9hPOeMEsvZE.webp?r=02c" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWKjlajHnj4JDWVf3jziDQzxyCpWyAoqRiT9m4O6SPrBVGmXF2itsvtSIcKrcdrAFibDMwm_-JIYe18QRRCdGh6KK-c8DwO7qfA.webp?r=3cc" alt="" />
-          </div>
-        </div>
-      </div>
+      <!-- * Small Card Starts -->
 
-      <div class="small-cards">
-        <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
-          <h5><a href="#">Award-Winning Films</a></h5>
-          <h5><a href="#">More</a></h5>
-        </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZtunnStsj-kFo6h2eFDwMU7P0nKcMDBTE546z6EhaQ6tQJWWhZ2yOtircfGZN3k9o9EtPZaKRunqBgHWZp3k8CkyUiGJh_8REo.webp?r=ab0" alt="" />
+      <div class="trending-cards">
+        <div class="cards-sm">
+          <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
+            <h5><a href="#">Trending Now</a></h5>
+            <h5><a href="#">More</a></h5>
           </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXAfUUJUT_VnuAL0S_MtIwxHIYWvBuHaSGbfISTOm_jIJawkPWAkt2E6YU0zZ51cvWsuxVtA4isBfwNk6O4dxunYwLjyrFY70_U.webp?r=b27" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbbPETUKNPqzTVhfX0-LAzr1ChsOOdFXj-9g3om-fcz-Hm48OphGUpENhc1O5JdkVtCgTPTOXls7GQq-4y1ruB7sG19ugPEEUgA.webp?r=71a" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeAcplMCoVsDGlo_212q8qOqvr0PftgemAKZTzSFl-8LAXGzAN-liqsdbRaFwAog7upht2X34KtG_XFaVSxqyQYqGZcmLtkWgZ4.webp?r=e10" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYqbOKDpnn6qMtN0DP6hJvItdfYtriwFQoOf151iUwtsYd-FV2UKkDdDOejkMKUvGJdZ7N0npcH6QQkumZFp-8Q5g8r4-ukuRok.webp?r=191" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY27wm2jxmFSkG1b63DT4XXL3_s0I673Ka1vOGSzb_8M8Z7CSb_UlKLSayK-rzZhbYUA1Ub3T-xuvXs-Gu__mlDRrkrndBMmb2U.webp?r=ef9" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeJqj2tVaL8mtNu2BBgZJOwA-SJQSGoW9HmqH_10n0xFmUxG1WTByXEupC-eLA0ExxqDanXQ3E9BxLE_mmiBRj85MzbePdNajg8.webp?r=1aa" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="small-cards">
-        <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
-          <h5><a href="#">Action & Adventure</a></h5>
-          <h5><a href="#">More</a></h5>
-        </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWHYWWND_VYaezSgJqCUJuOcW9kAyxBqY3956d29ki-WPnY75n8xTcd5l8ZPe8lqDL0NpM4woaVfhWHVuZL-yaL8VQ807rwp9Rs.webp?r=586" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYsWw1W-F9lXQoyUdNx0Pn_Nk0ngmYdJBIubeF49LHZjQl9pF0zsA-TJXqt2hk8yGpcFJyYY8smf5S9EIntQQYAc_mwGDU0JJZM.webp?r=73b" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXSXzYI-1OanMgNBqIQbmRc7RCJmJ0jtVHjgN8hKVn9Dn_80rqRGFRlm_Pv08F0V6ZEEQNOCryoDvioEzBEuK2ZQ8YEBPlOduOw.webp?r=212" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb0OoyeytuKeP80gPUpkmGBRyLLDy1j72cIftNbMazQW7HwfVhfBcl3y-sko6Vd2OEgleDL1x-TW9jL9VNPF9QVVISjuaOa5jes.webp?r=85c" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXxTCtWA_2rb_cL0eBeMGN-_6YJUA5A4_TH-bp5QoKMyAB7VgmFQ2NCBQ2Atwy7gejYgvV6UAqlAv7FnFTs1ETWSO7CcK7uqx1U.webp?r=dce" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbCzsAldsf8w7yl1cMZfY_zRHwm_8ZzE5cLct40Ge5Nig1q9RLf558GtfIAz72ODfRxWGHrE_GzeFRMutaHmBMTfeJjpnDaVgyQ.webp?r=b68" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRAoleUNI1SHciNtFUUniUL9hWFPckJlYPgJQCta0bkDgL1cNIj3CADARj2pZxAbzjam9VidvqPvDWmOfe8MNYgvR0pCHHIhVhU.webp?r=608" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="small-cards">
-        <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
-          <h5><a href="#">Romantic Korean TV Shows</a></h5>
-          <h5><a href="#">More</a></h5>
-        </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY3g5SSMXP_O0iMEaGbVesRYJIw2XGEDOkfnM8vc0SBZ2NDAfuIZQlPiQ4qo9xj0yQFI4RqwrSoHVbTNRdp6feJ2m4qdwgxcFao.webp?r=306" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaYCpTnpssAudRy4wnmM5zzBJgBovRT45t5H4SdkhpyWPY8Eklb1H1pv3GRIvfQMJ9sJ-QmQ_zYWlkVXtXyL-nykX_7DRjJ8Tnw.webp?r=627" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaoGeVb3mrWWc8ESrstkTrim0OH2u4EV1srhzt2qCRkfb4pxobguyciM-7a6Ahks3NriAK-CQCcKG8Eu7vYh3rl5EBAG7r5Tq70.webp?r=0cd" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYJiJEXKtGfkXiEwomQzSAVSSgeuN0lZdcG4zB5yzlp1jm8q6CpncWwpxu2IXMb0w-tmh4ijsxlmoHCIcFaBaxs6EpuVXor0xSY.webp?r=b03" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU-uq3Uz-lbyvvAOhD8E-DwQhit4ty00OTyPypLbEWLUn3-PL8Rpk_kAduqHERqGv3zyX4-a13MOf1HaG_22CLlFlmYT9_mc_Qc.webp?r=3c4" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABasj05F9JWYk9ERCve7jLvPdZ0aSPxKDAsA8DYf_fSWKNVGjCxGexsxvU1vKIdwaqI_uGpDoISEI47k4IqPcPWIUi4Kj9Q-C3s4.webp?r=8a9" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcE2Q6ZQv-28y6EhLvgqZwmy6w50p0W6OcKvVk-PILl5psajTCkAzGQpQD2imnzzDR3VQgxjH52uZDT3EdOyj7EJ-kSHVXgjJr0.webp?r=82f" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="small-cards">
-        <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
-          <h5><a href="#">Horror Movies</a></h5>
-          <h5><a href="#">More</a></h5>
-        </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYXmCEG2L84hxVgIJl3O62TqJ-f6kbQ_u4whvr2keY585LKaywT_FnzxNFND60BE-tAMhNyCAtcUB3877aKqWTSMkxqfPjd-FLs.webp?r=971" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfOyoNy8v5Qbap77r1bYoNNjLWBqwL_Gau_MS9vwPpfgVsG0vn8onYg56OI_GsOY4nll4gxYpYu7EuAlUmq-dVQP7MzDdwgsuPY.webp?r=211" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXep4gCuLvu1KBgpgklEVnfis4U_t0gCwhkrPWlqubkCRMgXpIfHbOfaKLFnxws2nMoOhFWqXgUXEnNTnHUBoJO6FmsUjRalbFQ.webp?r=118" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUlq8c5H5jLeG0U2vmRSjgNvgyG319rUtQR21bTKPOcVmCKvchHdJX3vcdiIvP7ke9H9W9vpcm1_d7N62iMfwdQNqS_7i3eCDWw.webp?r=f02" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbynFXWt42R4Fj59eGpL3YhaMjIpeRksV6Y5YTnkTjbynjIv8fRww-PIWPiMVLpXJRGaHJiurE2LPJJXPQAHD2DqYKMhNbECW6w.webp?r=bb3" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfCy1oWYBOPVGv5aK4GM46FDa1VbvuR6XCUC5kTasgt63MCw2Dq4ALDSPMPXWdgnOKMLXIFoWSP2jzl9bfcpY_wOz51t8UZ6XRE.webp?r=ba4" alt="" />
-          </div>
-          <div class="card bg-dark" style="width: 250px; height: 140px">
-            <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf-KJW4ax9JVJeSbs9MOneyzvZOkNcSm-e5Z3aIz52CzoYcii9GhBK1_ZUAEU8wdf1XVaNRQTPbXo_g9S7AbxZbNJP7MN9Iy98k.webp?r=993" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="modal modal-xl fade z-14 contact" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="contact-form">
-            <div class="contact-header d-flex justify-content-between align-content-center">
-              <h1><i class="bx bxs-chat"></i>Contact Us</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZEv8z9IWm7DDzS-9C0AcARf1QvuUo6xW407C4bPfSOkK9M4MzE3g09yU8g7LF9v9dMop8Gfzm03gyHDsDlq56QSi_VLDk8GYD8.webp?r=c7f" alt="" />
             </div>
-            <form name="input-new-blog" method="post" action="" class="form1">
-              <div class="input-box">
-                <input type="text" required="required" />
-                <span>Name</span>
-              </div>
-              <div class="input-box">
-                <input type="text" required="required" />
-                <span>Email</span>
-              </div>
-              <div class="input-box">
-                <input type="text" required="required" />
-                <span>Title</span>
-              </div>
-              <div class="textarea-box">
-                <textarea cols="135" rows="10" required="required"></textarea>
-                <span>Feedback</span>
-              </div>
-              <button class="btn submit">Submit!</button>
-            </form>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcTFLmYIYxiGAO6goaNz6mPcO05qHtyT-HwjqHrHFcEPsi-czr1cemQZ9dJh7mjpaAZ6WV-LYa6b16afwkP-wTPiwBmeZVYu4UU.webp?r=ae9" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUAZq9Kdrj3EGdYdRNGwgbEV10LICwq7XfygjCxuImLcCFEbevu9yZpGuWuHSKuvMiIXocBBt6eWxXcbwFwQ6qZKVpOrHCBd4dY.webp?r=6aa" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeV7gT0SSdQ2vkO9Rau_9GGDApKyg3SH1pPE-sJ_IrB27oGndkGZzkEysE4JCn9Gcr8HtJ26on-4GPbjFqBf4T4AWXEduCqsj5M.webp?r=c5f" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdnZR0fG5gM6Nw9bwFJZOThF_vA4dPwuz_0qHzc23VHOJUGBvseEIxPjT-kqu9J77SQGsSYJSlTf6q41UyJ-I66RzBkwszhhKS4.webp?r=985" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRMWH1IHpwtXgxo-GD1jz9UChZdD5aXVdqGEvtGxdAoT9vn5aYqdEWeGVNOWUX84K3I3MsTOcWXD8hGnU_riSAFa9hPOeMEsvZE.webp?r=02c" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#firstCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWKjlajHnj4JDWVf3jziDQzxyCpWyAoqRiT9m4O6SPrBVGmXF2itsvtSIcKrcdrAFibDMwm_-JIYe18QRRCdGh6KK-c8DwO7qfA.webp?r=3cc" alt="" />
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+
+      <div class="award-cards">
+        <div class="cards-sm">
+          <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
+            <h5><a href="#">Award-Winning Films</a></h5>
+            <h5><a href="#">More</a></h5>
+          </div>
+          <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZtunnStsj-kFo6h2eFDwMU7P0nKcMDBTE546z6EhaQ6tQJWWhZ2yOtircfGZN3k9o9EtPZaKRunqBgHWZp3k8CkyUiGJh_8REo.webp?r=ab0" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXAfUUJUT_VnuAL0S_MtIwxHIYWvBuHaSGbfISTOm_jIJawkPWAkt2E6YU0zZ51cvWsuxVtA4isBfwNk6O4dxunYwLjyrFY70_U.webp?r=b27" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbbPETUKNPqzTVhfX0-LAzr1ChsOOdFXj-9g3om-fcz-Hm48OphGUpENhc1O5JdkVtCgTPTOXls7GQq-4y1ruB7sG19ugPEEUgA.webp?r=71a" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeAcplMCoVsDGlo_212q8qOqvr0PftgemAKZTzSFl-8LAXGzAN-liqsdbRaFwAog7upht2X34KtG_XFaVSxqyQYqGZcmLtkWgZ4.webp?r=e10" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYqbOKDpnn6qMtN0DP6hJvItdfYtriwFQoOf151iUwtsYd-FV2UKkDdDOejkMKUvGJdZ7N0npcH6QQkumZFp-8Q5g8r4-ukuRok.webp?r=191" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY27wm2jxmFSkG1b63DT4XXL3_s0I673Ka1vOGSzb_8M8Z7CSb_UlKLSayK-rzZhbYUA1Ub3T-xuvXs-Gu__mlDRrkrndBMmb2U.webp?r=ef9" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#secondCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeJqj2tVaL8mtNu2BBgZJOwA-SJQSGoW9HmqH_10n0xFmUxG1WTByXEupC-eLA0ExxqDanXQ3E9BxLE_mmiBRj85MzbePdNajg8.webp?r=1aa" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-cards">
+        <div class="cards-sm">
+          <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
+            <h5><a href="#">Action & Adventure</a></h5>
+            <h5><a href="#">More</a></h5>
+          </div>
+          <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWHYWWND_VYaezSgJqCUJuOcW9kAyxBqY3956d29ki-WPnY75n8xTcd5l8ZPe8lqDL0NpM4woaVfhWHVuZL-yaL8VQ807rwp9Rs.webp?r=586" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYsWw1W-F9lXQoyUdNx0Pn_Nk0ngmYdJBIubeF49LHZjQl9pF0zsA-TJXqt2hk8yGpcFJyYY8smf5S9EIntQQYAc_mwGDU0JJZM.webp?r=73b" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXSXzYI-1OanMgNBqIQbmRc7RCJmJ0jtVHjgN8hKVn9Dn_80rqRGFRlm_Pv08F0V6ZEEQNOCryoDvioEzBEuK2ZQ8YEBPlOduOw.webp?r=212" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb0OoyeytuKeP80gPUpkmGBRyLLDy1j72cIftNbMazQW7HwfVhfBcl3y-sko6Vd2OEgleDL1x-TW9jL9VNPF9QVVISjuaOa5jes.webp?r=85c" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXxTCtWA_2rb_cL0eBeMGN-_6YJUA5A4_TH-bp5QoKMyAB7VgmFQ2NCBQ2Atwy7gejYgvV6UAqlAv7FnFTs1ETWSO7CcK7uqx1U.webp?r=dce" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbCzsAldsf8w7yl1cMZfY_zRHwm_8ZzE5cLct40Ge5Nig1q9RLf558GtfIAz72ODfRxWGHrE_GzeFRMutaHmBMTfeJjpnDaVgyQ.webp?r=b68" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#thirdCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRAoleUNI1SHciNtFUUniUL9hWFPckJlYPgJQCta0bkDgL1cNIj3CADARj2pZxAbzjam9VidvqPvDWmOfe8MNYgvR0pCHHIhVhU.webp?r=608" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="korean-cards">
+        <div class="cards-sm">
+          <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
+            <h5><a href="#">Romantic Korean TV Shows</a></h5>
+            <h5><a href="#">More</a></h5>
+          </div>
+          <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY3g5SSMXP_O0iMEaGbVesRYJIw2XGEDOkfnM8vc0SBZ2NDAfuIZQlPiQ4qo9xj0yQFI4RqwrSoHVbTNRdp6feJ2m4qdwgxcFao.webp?r=306" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaYCpTnpssAudRy4wnmM5zzBJgBovRT45t5H4SdkhpyWPY8Eklb1H1pv3GRIvfQMJ9sJ-QmQ_zYWlkVXtXyL-nykX_7DRjJ8Tnw.webp?r=627" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaoGeVb3mrWWc8ESrstkTrim0OH2u4EV1srhzt2qCRkfb4pxobguyciM-7a6Ahks3NriAK-CQCcKG8Eu7vYh3rl5EBAG7r5Tq70.webp?r=0cd" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYJiJEXKtGfkXiEwomQzSAVSSgeuN0lZdcG4zB5yzlp1jm8q6CpncWwpxu2IXMb0w-tmh4ijsxlmoHCIcFaBaxs6EpuVXor0xSY.webp?r=b03" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU-uq3Uz-lbyvvAOhD8E-DwQhit4ty00OTyPypLbEWLUn3-PL8Rpk_kAduqHERqGv3zyX4-a13MOf1HaG_22CLlFlmYT9_mc_Qc.webp?r=3c4" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABasj05F9JWYk9ERCve7jLvPdZ0aSPxKDAsA8DYf_fSWKNVGjCxGexsxvU1vKIdwaqI_uGpDoISEI47k4IqPcPWIUi4Kj9Q-C3s4.webp?r=8a9" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fourthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcE2Q6ZQv-28y6EhLvgqZwmy6w50p0W6OcKvVk-PILl5psajTCkAzGQpQD2imnzzDR3VQgxjH52uZDT3EdOyj7EJ-kSHVXgjJr0.webp?r=82f" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horror-cards">
+        <div class="cards-sm">
+          <div class="d-flex justify-content-between align-items-center p-4 pb-0 mb-0">
+            <h5><a href="#">Horror Movies</a></h5>
+            <h5><a href="#">More</a></h5>
+          </div>
+          <div class="d-flex justify-content-around align-items-center flex-wrap ms-3 me-3 row-gap-3">
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYXmCEG2L84hxVgIJl3O62TqJ-f6kbQ_u4whvr2keY585LKaywT_FnzxNFND60BE-tAMhNyCAtcUB3877aKqWTSMkxqfPjd-FLs.webp?r=971" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfOyoNy8v5Qbap77r1bYoNNjLWBqwL_Gau_MS9vwPpfgVsG0vn8onYg56OI_GsOY4nll4gxYpYu7EuAlUmq-dVQP7MzDdwgsuPY.webp?r=211" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6708-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXep4gCuLvu1KBgpgklEVnfis4U_t0gCwhkrPWlqubkCRMgXpIfHbOfaKLFnxws2nMoOhFWqXgUXEnNTnHUBoJO6FmsUjRalbFQ.webp?r=118" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUlq8c5H5jLeG0U2vmRSjgNvgyG319rUtQR21bTKPOcVmCKvchHdJX3vcdiIvP7ke9H9W9vpcm1_d7N62iMfwdQNqS_7i3eCDWw.webp?r=f02" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbynFXWt42R4Fj59eGpL3YhaMjIpeRksV6Y5YTnkTjbynjIv8fRww-PIWPiMVLpXJRGaHJiurE2LPJJXPQAHD2DqYKMhNbECW6w.webp?r=bb3" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfCy1oWYBOPVGv5aK4GM46FDa1VbvuR6XCUC5kTasgt63MCw2Dq4ALDSPMPXWdgnOKMLXIFoWSP2jzl9bfcpY_wOz51t8UZ6XRE.webp?r=ba4" alt="" />
+            </div>
+            <div class="card bg-dark" style="width: 250px; height: 140px" data-bs-toggle="modal" data-bs-target="#fifthCardModal">
+              <img src="https://occ-0-6707-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf-KJW4ax9JVJeSbs9MOneyzvZOkNcSm-e5Z3aIz52CzoYcii9GhBK1_ZUAEU8wdf1XVaNRQTPbXo_g9S7AbxZbNJP7MN9Iy98k.webp?r=993" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- * Small Cards End -->
+    </div>
+    <!-- * Main Content End -->
 
     <!-- ! Main Content End -->
 
     <!-- * Footer Start -->
-    <!-- <footer class="bg-light text-dark pt-5 pb-4 px-3 mt-3 d-flex justify-content-evenly gap-5">
-      <div class="container fcol1 h-100">
-        <h4>Company Name</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
+    <footer>
+      <div class="container-fluid footer">
+        <h6>© 2023 - dibimbing Bootcamp Mini Project by <a href="https://www.linkedin.com/in/arifiensr" class="linkedin"> M. Arifien Syachrizal</a></h6>
       </div>
-      <div class="container fcol1 h-100">
-        <h4>Products</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
-      </div>
-      <div class="container fcol1 h-100">
-        <h4>Company Name</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
-      </div>
-      <div class="container fcol1 h-100">
-        <h4>Contact</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus odit harum error quia accusantium, dolor id, a voluptatem quidem praesentium voluptas nisi sint. Exercitationem officiis ea deleniti id quia!</p>
-      </div>
-    </footer> -->
+    </footer>
     <!-- * Footer End -->
 
     <!-- * Bootstrap JS -->
