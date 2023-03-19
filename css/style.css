@@ -456,7 +456,7 @@ li a:hover {
   width: 256px;
   height: 350px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal-poster img {
@@ -575,7 +575,7 @@ li a:hover {
   padding: 0.4rem 1rem;
   border-radius: 5px;
   font-weight: 600;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal-button:hover {
@@ -853,7 +853,7 @@ body > nav > ol > li.breadcrumb-item.active {
   .modal-poster {
     display: none;
   }
-  
+
   .modal-desc .cast-trailer {
     flex-wrap: wrap;
     row-gap: 20px;
@@ -916,5 +916,4 @@ body > nav > ol > li.breadcrumb-item.active {
     justify-content: center;
     flex-grow: 1;
   }
-
 }
