@@ -148,6 +148,7 @@ li a:hover {
 
 .carousel {
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .c-item {
@@ -421,6 +422,18 @@ li a:hover {
 
 .modal-header-img-5 {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://i.ytimg.com/vi/Zi88i4CpHe4/maxresdefault.jpg');
+}
+
+.modal-header-img-6 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://www.denofgeek.com/wp-content/uploads/2023/03/Idris-Elba-in-Luther-the-Fallen-Sun.jpg?fit=1200%2C675');
+}
+
+.modal-header-img-7 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://www.hollywoodreporter.com/wp-content/uploads/2023/01/Pedro-Pascal-Anna-Torv-Liane-Hentscher_HBO-H-2023.jpg');
+}
+
+.modal-header-img-8 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-grey-) 100%), url('https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQSTS8LVid3gnC-nKumw-haJ7yifyp6DgF2F3-iIJYLhmso1-gmkMk_wzNNlZBmduqcuDqAc_oJ4oPkj7LEQvIdqcisiypdIkg3MxOrFceh1DeIM9mXebun7Lb-D8OZA9Lnn-Kspigyd_XCiAPjefDRO2JR0.jpg?r=ed7');
 }
 
 .modal-body {
