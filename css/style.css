@@ -159,22 +159,41 @@ li a:hover {
   background-size: cover;
 }
 
+.c-img img {
+  width: 100%;
+  height: auto;
+}
+
 .c-img-1 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://dx35vtwkllhj9.cloudfront.net/lionsgateus/plane/images/bg1.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://static01.nyt.com/images/2023/03/08/multimedia/luther2-gmkw/luther2-gmkw-videoSixteenByNine3000.jpg');
+}
+
+.c-title-1 {
+  position: absolute;
+  top: 35%;
+  left: 13%;
 }
 
 .c-img-2 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://images.lifestyleasia.com/wp-content/uploads/sites/3/2022/01/22121849/money-heist_-korea-joint-economic-area_slate-announcement_2022-1-1350x900.jpeg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://static.skyassets.com/contentstack/assets/blt143e20b03d72047e/blt58003b8446c88821/63b7fcadade3a64c6774617f/MicrosoftTeams-image_(14).png');
+}
+
+.c-title-2 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  scale: 1.2;
 }
 
 .c-img-3 {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://www.epw.in/system/files/di_images/2020/02/26/joker-main.png');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, var(--color-black-) 100%), url('https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQWLWulB8WKKRClHyCMW33zONSWOBRcGM2sgpdFlb5r2_-1VqM6skxOKEHiS2HvzYuy7oadFip1JbLddKzQWHIX-fKyHSRx5S4BONc5YO_lzrpZQEyslBCKie-qQJ90woOJzv7c22KhvgoNCB5kGbB7PDhmk.jpg?r=1c6');
 }
 
-.c-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+.c-title-3 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  /* scale: 1.2; */
 }
 
 /* * Carousel End */
@@ -787,12 +806,22 @@ body > nav > ol > li.breadcrumb-item.active {
     height: 400px;
   }
 
-  .c-title {
-    font-size: 1rem;
+  .c-title-1 {
+    scale: 0.6;
+    top: 29%;
+    left: 2%;
   }
 
-  .carousel-caption {
-    font-size: 0.75rem;
+  .c-title-2 {
+    scale: 0.9;
+    top: 10%;
+    left: 15%;
+  }
+
+  .c-title-3 {
+    scale: 0.6;
+    top: 65%;
+    left: 14%;
   }
 }
 
@@ -806,11 +835,22 @@ body > nav > ol > li.breadcrumb-item.active {
     height: 250px;
   }
 
-  .c-title {
-    font-size: 0.75rem;
+  .c-title-1 {
+    /* display: none; */
+    scale: 0.3;
+    top: 50%;
+    left: 4%;
   }
 
-  .carousel-caption {
-    font-size: 0.5rem;
+  .c-title-2 {
+    scale: 0.4;
+    top: 5%;
+    left: 2%;
+  }
+
+  .c-title-3 {
+    scale: 0.6;
+    top: 65%;
+    left: 8%;
   }
 }
